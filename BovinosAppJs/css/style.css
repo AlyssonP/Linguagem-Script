@@ -1,0 +1,24 @@
+#carousel-bovinos .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.card-deck .card-cattle img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-deck .card-cattle p{
+    line-height: 10px;
+}
+
+.card-deck .card-cattle p span{
+    font-weight: 600;
+}
+
+.card-deck .card-cattle .data-nascimento{
+    font-style: italic;
+    font-weight: 500;
+}

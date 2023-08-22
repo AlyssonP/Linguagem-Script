@@ -1,0 +1,6 @@
+console.log('h'); //=> "h"
+console.log('hello world'); //=> "hello world"
+console.log("hello world"); //=> "hello world"
+console.log(`hello world`); //=> "hello world"
+console.log(String('hello world')); //=> "hello world"
+console.log(new String('hello world')); //=> "hello world"

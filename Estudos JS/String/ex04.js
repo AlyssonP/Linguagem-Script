@@ -1,0 +1,11 @@
+console.log('lorem ipsum'.length); //=> 11
+console.log('lorem ipsum'.includes('lorem')); //=> true
+console.log('lorem ipsum'.includes('dolor')); //=> false
+console.log('hello'.repeat(3)); //=> "hellohellohello"
+console.log('lorem ipsum'.substr(1, 2)); //=> "or"
+console.log('lorem ipsum'.substr(1)); //=> "orem ipsum"
+console.log('lorem ipsum'.substring(1, 2)); //=> "o"
+console.log('lorem ipsum'.substring(1)); //=> "orem ipsum"
+console.log('lorem ipsum'.slice(1, 2)); //=> "o"
+console.log('lorem ipsum'.slice(1)); //=> "orem ipsum"
+console.log('lorem ipsum'.slice(-2)); //=> "um"

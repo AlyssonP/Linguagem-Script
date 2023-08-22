@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/cattle.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bovinos App- Gerenciador</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/cattle.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-center">
+                    Bovinos App
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link active" href="#">Gerenciador</a>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start Main -->
+    <main>
+        <div class="container">
+            <h1 class="mt-2 text-center">Gerenciador</h1>
+
+            <!-- Button trigger modal -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button 
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#formCattleModal"
+                    onclick="loadFormCreateCattle()"
+                    >
+                    +
+                </button>
+            </div>
+            
+            <section class="card-deck my-3 row">
+                <!--List Cows  -->
+            </section>
+
+            <!-- Modal -->
+            <form id="formCattle">
+                <div class="modal fade" id="formCattleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="formModalLabel">Cadastrar Bovino</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="cattle-raca">Raça</label>
+                                    <input type="text" class="form-control" id="cattle-raca" name="raca" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cattle-peso">Peso (KG)</label>
+                                    <input type="number" class="form-control" id="cattle-peso" name="peso" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cattle-data-nasciment">Data Nascimento</label>
+                                    <input type="date" class="form-control" id="cattle-data-nascimento" name="dataNascimento" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary" >Cadastrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer></footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

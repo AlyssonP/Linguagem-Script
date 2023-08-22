@@ -1,0 +1,11 @@
+console.log('lorem ipsum'.match(/\w+/g)); //=> [ "lorem", "ipsum" ]
+console.log('lorem ipsum'.replace('lorem', 'LOREM')); //=> "LOREM ipsum"
+console.log('lorem ipsum'.search('lorem')); //=> 0
+console.log('lorem ipsum'.search('ipsum')); //=> 6
+console.log('LOREM IPSUM'.toLowerCase()); //=> "lorem ipsum"
+console.log('lorem ipsum'.toUpperCase()); //=> "LOREM IPSUM"
+console.log('  lorem  ipsum  '.trim()); //=> "lorem  ipsum"
+console.log('10'.padStart(4)); //=> "  10"
+console.log('10'.padStart(5, "#")); //=> "###10"
+console.log('lorem ipsum'.startsWith('lorem')); //=> true
+console.log('lorem ipsum'.endsWith('ipsum')); //=> true
